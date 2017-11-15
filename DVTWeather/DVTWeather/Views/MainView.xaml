@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DVTWeather.Views.MainView"
+             Title="Weather">
+    <StackLayout Padding="20,40,20,20">
+
+        <ActivityIndicator IsRunning="{Binding IsBusy}" VerticalOptions="Center" HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal">
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding Date}" FontSize="20"/>
+            </StackLayout>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Image Source="{Binding IconImageString}"
+                       Aspect="AspectFill"
+                   WidthRequest="180"
+                   HeightRequest="180"/>
+            </StackLayout>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding MaxWeatherDescription}" FontSize="40"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding MinWeatherDescription}" FontSize="30"/>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+           
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding Area}"/>
+            </StackLayout>
+        </StackLayout>
+
+  
+
+    
+
+        
+
+    </StackLayout>
+</ContentPage>
