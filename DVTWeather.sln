@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVTWeather.iOS", "DVTWeathe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVTWeather.UITest", "UITest\DVTWeather.UITest.csproj", "{37C105AA-635D-4DA2-9266-E1D6ED0EFE13}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Release", "Release", "{49164C79-EB8D-4974-8974-91CFA78A9220}"
+	ProjectSection(SolutionItems) = preProject
+		Release\DVTWeather.Android.apk = Release\DVTWeather.Android.apk
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
